@@ -52,7 +52,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc BENCHMARK BUGS CHANGES CREDITS GOALS HISTORY LICENSE NEW README TODO
 %{perl_vendorlib}/Math/*.pm
-%{perl_vendorlib}/Math/BigInt
+%{perl_vendorlib}/Math/BigInt/*.pm
 %{_mandir}/man3/*
 %dir %{_examplesdir}/%{name}-%{version}
 %{_examplesdir}/%{name}-%{version}/*.txt
