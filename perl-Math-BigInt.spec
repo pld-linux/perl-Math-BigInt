@@ -1,6 +1,6 @@
 #
 # Conditional build:
-# _without_tests - do not perform "make test"
+%bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Math
@@ -31,10 +31,9 @@ Nowe wersje modu³ów Math::BigInt i Math::BigFloat.
 %build
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
-
 %{__make}
 
-%{!?_without_tests:%{__make} test INST_ARCHLIB=t}
+%{?with_tests:%{__make} test INST_ARCHLIB=t}
 
 %install
 rm -rf $RPM_BUILD_ROOT
