@@ -9,7 +9,7 @@ Summary:	New versions of Math::BigInt and Math::BigFloat Perl modules
 Summary(pl):	Nowe wersje modu³ów Perla Math::BigInt i Math::BigFloat
 Name:		perl-Math-BigInt
 Version:	1.70
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
