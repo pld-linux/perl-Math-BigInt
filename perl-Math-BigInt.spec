@@ -5,8 +5,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Math
 %define	pnam	BigInt
-Summary:	New versions of Math::BigInt and Math::BigFloat
-Summary(pl):	Nowe wersje modu³ów Math::BigInt i Math::BigFloat
+Summary:	New versions of Math::BigInt and Math::BigFloat Perl modules
+Summary(pl):	Nowe wersje modu³ów Perla Math::BigInt i Math::BigFloat
 Name:		perl-Math-BigInt
 Version:	1.70
 Release:	1
