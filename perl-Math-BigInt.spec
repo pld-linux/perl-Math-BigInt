@@ -8,12 +8,12 @@
 Summary:	New versions of Math::BigInt and Math::BigFloat
 Summary(pl):	Nowe wersje modu³ów Math::BigInt i Math::BigFloat
 Name:		perl-Math-BigInt
-Version:	1.64
+Version:	1.65
 Release:	1
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	e50624025c46c9040b194847ab06899e
+# Source0-md5:	4db45b3d18d96940d267bf72057f912e
 BuildRequires:	perl-devel >= 5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
