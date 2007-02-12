@@ -6,7 +6,7 @@
 %define		pdir	Math
 %define		pnam	BigInt
 Summary:	New versions of Math::BigInt and Math::BigFloat Perl modules
-Summary(pl):	Nowe wersje modu≥Ûw Perla Math::BigInt i Math::BigFloat
+Summary(pl.UTF-8):   Nowe wersje modu≈Ç√≥w Perla Math::BigInt i Math::BigFloat
 Name:		perl-Math-BigInt
 Version:	1.77
 Release:	1
@@ -23,8 +23,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 New versions of Math::BigInt and Math::BigFloat.
 
-%description -l pl
-Nowe wersje modu≥Ûw Math::BigInt i Math::BigFloat.
+%description -l pl.UTF-8
+Nowe wersje modu≈Ç√≥w Math::BigInt i Math::BigFloat.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
