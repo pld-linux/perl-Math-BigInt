@@ -18,6 +18,11 @@ Source0:	http://www.cpan.org/modules/by-module/Math/%{pdir}-%{pnam}-%{version}.t
 URL:		http://search.cpan.org/dist/Math-BigInt/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
+#Conflicts:	perl-Math-BigRat < 0.19
+#Conflicts:	perl-bignum < 0.21
+#...but these are in perl-modules, so we must override them by separate packages:
+Requires:	perl-Math-BigRat >= 0.19
+Requires:	perl-bignum >= 0.21
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
