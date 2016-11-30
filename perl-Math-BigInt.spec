@@ -8,16 +8,20 @@
 Summary:	New versions of Math::BigInt and Math::BigFloat Perl modules
 Summary(pl.UTF-8):	Nowe wersje modułów Perla Math::BigInt i Math::BigFloat
 Name:		perl-Math-BigInt
-Version:	1.999726
+Version:	1.999802
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Math/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	3e45e459ece367a6b29a79b2f7363ba0
+# Source0-md5:	07bfbbabe6eb1a161c0bbbbd73242b20
 URL:		http://search.cpan.org/dist/Math-BigInt/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
+%if %{with tests}
+BuildRequires:	perl-Math-Complex >= 1.39
+BuildRequires:	perl-Test-Simple >= 0.94
+%endif
 # special case: if current perl-modules contain older releases, uncomment Requires and comment Conflicts below
 #Requires:	perl-Math-BigInt-FastCalc >= 0.27
 #Requires:	perl-Math-BigRat >= 0.2602
@@ -65,10 +69,12 @@ rm -rf $RPM_BUILD_ROOT
 %{perl_vendorlib}/Math/BigInt.pm
 %{perl_vendorlib}/Math/BigInt/Calc.pm
 %{perl_vendorlib}/Math/BigInt/CalcEmu.pm
+%{perl_vendorlib}/Math/BigInt/Lib.pm
 %{_mandir}/man3/Math::BigFloat.3pm*
 %{_mandir}/man3/Math::BigInt.3pm*
 %{_mandir}/man3/Math::BigInt::Calc.3pm*
 %{_mandir}/man3/Math::BigInt::CalcEmu.3pm*
+%{_mandir}/man3/Math::BigInt::Lib.3pm*
 %dir %{_examplesdir}/%{name}-%{version}
 %{_examplesdir}/%{name}-%{version}/*.txt
 %attr(755,root,root) %{_examplesdir}/%{name}-%{version}/*.pl
