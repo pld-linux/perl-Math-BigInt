@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	Math
 %define		pnam	BigInt
 Summary:	New versions of Math::BigInt and Math::BigFloat Perl modules
